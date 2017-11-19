@@ -4,4 +4,10 @@ attr_accessor :name, :songs
     @name = name
     @songs = []
   end
+
+  def add_song(title)
+    self.songs << title
+
+  end
+
 end
