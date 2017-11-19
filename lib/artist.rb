@@ -14,7 +14,7 @@ attr_accessor :name, :songs, :genres
   end
 
   def genres
-    
+    self.genres
   end
 
 
