@@ -6,7 +6,7 @@ attr_accessor :name, :songs
   end
 
   def add_song(title)
-    temp = song.new(title)
+    temp = Song.new(title)
     self.songs << temp
 
   end
