@@ -1,5 +1,5 @@
 class Genre
-attr_accessor :name, :songs, :artists
+attr_accessor :name, :songs
   def initialize(name)
     @name = name
     @songs = []
@@ -8,6 +8,11 @@ attr_accessor :name, :songs, :artists
   def add_song(title)
     self.songs << title
 
+  end
+  def artists
+    self.songs.each do |song|
+      song.artist
+    end
   end
 
 end
