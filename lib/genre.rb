@@ -11,10 +11,10 @@ attr_accessor :name, :songs
   end
   def artists
     temp = []
-    self.songs.each do |song|
-      temp << song.artist
+    self.songs.map do |song|
+       song.artist
     end
-    temp
+    #temp
   end
 
 end
