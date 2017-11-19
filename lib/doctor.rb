@@ -7,7 +7,7 @@ attr_accessor :name, :appointments
 
   end
   def add_appointment(appointment)
-    self.appointments << appointments
+    self.appointments << appointment
     appointment.doctor = self
   end
 
