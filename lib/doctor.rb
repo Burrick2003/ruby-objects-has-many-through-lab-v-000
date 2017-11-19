@@ -1,5 +1,5 @@
 class Doctor
-attr_accessor :name, :appointments
+attr_accessor :name
   def initialize(name)
     self.name = name
     self.appointments = []
@@ -10,7 +10,9 @@ attr_accessor :name, :appointments
     self.appointments << appointment
     appointment.doctor = self
   end
-
+  def appointments
+    @appointments
+  end
 
 
 
