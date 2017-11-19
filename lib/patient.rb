@@ -5,7 +5,8 @@ attr_accessor :name, :appointments
     @appointments = []
   end
   def add_appointment(appointment)
-    self.appointments << appointment
+    @appointments << appointment
+    appointment.patient = self
   end
   def doctors
     self.appointments.map do |appt|
