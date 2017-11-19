@@ -5,13 +5,16 @@ attr_accessor :name, :songs
     self.songs = []
   end
 
-  def add_song(title)
+  def add_song(song)
     #temp = Song.new(title)
-    self.songs << title
+    self.songs << song
     title.artist = self
 
   end
 
+  def genres
+
+  end
 
 
 
