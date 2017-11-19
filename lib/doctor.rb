@@ -8,7 +8,11 @@ attr_accessor :name, :appointments
     @appointments << appointment
     appointment.doctor = self
   end
-
+  def patients
+    self.appointments.map do |appt|
+      appt.patient
+    end
+  end
 
 
 end
