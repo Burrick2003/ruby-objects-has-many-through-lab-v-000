@@ -13,9 +13,6 @@ attr_accessor :name, :songs, :genres
     self.genres << title.genre
   end
 
-  def genres
-    self.genres
-  end
 
 
 
